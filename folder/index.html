@@ -1,0 +1,29 @@
+xampleTry this code »
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get Text Input Field Value in JavaScript</title>
+</head>
+<body>
+    <input type="text" onkeyup="getInputValue();" id="myInput" placeholder = "number 1">
+    <input type="text" onkeyup="getInputValue();" id="myInput2" placeholder = "number 2">
+    <input id="a3" type="text" name="total_amt" value = "0" />
+    <button type="button" >Get Value</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+
+            var inputVal = document.getElementById("myInput").value;
+            var inputVal2 = document.getElementById("myInput2").value;
+            var num1= ;
+            var num2 =  ;
+             var res = parseInt(a3)+parseInt(inputVal2)+parseInt(inputVal);
+
+            // Displaying the value
+            document.getElementById('a3').innerHTML = res;
+        }
+    </script>
+</body>
+</html>
